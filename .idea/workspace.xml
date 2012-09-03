@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf56dbf-de52-44b1-af27-d8d2e716303c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/generators/frame/pages/templates/application.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/generators/frame/pages/templates/application_helper.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frame.iml" afterPath="$PROJECT_DIR$/.idea/frame.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/frame/layout/templates/defaults.html.erb" afterPath="$PROJECT_DIR$/lib/generators/frame/layout/templates/defaults.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/frame/pages/pages_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/frame/pages/pages_generator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/frame/pages/templates/_error_messages.html.erb" afterPath="$PROJECT_DIR$/lib/generators/frame/pages/templates/_error_messages.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/frame/pages/templates/_links.html.erb" afterPath="$PROJECT_DIR$/lib/generators/frame/pages/templates/_links.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/frame/pages/templates/_sidebar.html.erb" afterPath="$PROJECT_DIR$/lib/generators/frame/pages/templates/_sidebar.html.erb" />
     </list>
     <ignored path="frame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pages_generator.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pages_generator.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/pages_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="22" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.7277677">
+            <state line="46" column="35" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_error_messages.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_error_messages.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="100" selection-start="403" selection-end="403" vertical-scroll-proportion="-7.5">
+            <state line="13" column="9" selection-start="346" selection-end="346" vertical-scroll-proportion="0.34031415">
               <folding />
             </state>
           </provider>
@@ -46,70 +46,7 @@
       <file leaf-file-name="_links.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_links.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout_generator.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/layout_generator.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="73" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="defaults.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/templates/defaults.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="44" selection-start="1609" selection-end="1609" vertical-scroll-proportion="-5.2771087">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/templates/application_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/templates/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql_generator.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/mysql/mysql_generator.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="49" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="secret_generator.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/secret/secret_generator.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="240" selection-end="333" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frame.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="66" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
+            <state line="5" column="61" selection-start="251" selection-end="251" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -128,29 +65,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/frame.gemspec" />
-        <option value="$PROJECT_DIR$/lib/generators/frame/secret/secret_generator.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/frame/secret/templates/database.yml" />
-        <option value="$PROJECT_DIR$/lib/generators/frame/devise/USAGE" />
-        <option value="$PROJECT_DIR$/lib/generators/frame/pages/USAGE" />
         <option value="$PROJECT_DIR$/lib/generators/frame.rb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/pages/templates/application.html.erb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/devise/devise_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/mysql/mysql_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/layout/pages_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/layout/layout_generator.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/frame/layout/templates/defaults.html.erb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/layout/templates/default_layout.html.erb" />
+        <option value="$PROJECT_DIR$/lib/generators/frame/pages/templates/_links.html.erb" />
+        <option value="$PROJECT_DIR$/lib/generators/frame/pages/templates/_error_messages.html.erb" />
+        <option value="$PROJECT_DIR$/lib/generators/frame/pages/templates/_sidebar.html.erb" />
+        <option value="$PROJECT_DIR$/lib/generators/frame/layout/templates/defaults.html.erb" />
+        <option value="$PROJECT_DIR$/lib/generators/frame/pages/templates/pages.html.erb" />
+        <option value="$PROJECT_DIR$/lib/generators/frame/pages/templates/index.html.erb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/pages/pages_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/frame/pages/templates/show.html.erb" />
+        <option value="$PROJECT_DIR$/lib/generators/frame/pages/templates/_form.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="558" />
     <option name="y" value="25" />
-    <option name="width" value="1152" />
+    <option name="width" value="1298" />
     <option name="height" value="764" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -211,20 +148,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,9 +318,14 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/generators/frame/pages/templates" />
+      <recent name="$PROJECT_DIR$/lib/generators/frame/pages" />
       <recent name="$PROJECT_DIR$/lib/generators/frame/layout/templates" />
-      <recent name="$PROJECT_DIR$/lib/generators/frame" />
       <recent name="$PROJECT_DIR$/lib/generators/frame/devise" />
+      <recent name="$PROJECT_DIR$/lib/generators/frame" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/generators/frame/pages/templates" />
+      <recent name="$PROJECT_DIR$/lib/generators/frame/layout/templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -501,25 +429,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="558" y="25" width="1152" height="764" extended-state="0" />
+    <frame x="558" y="25" width="1298" height="764" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25862068" sideWeight="0.670347" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22836539" sideWeight="0.6708464" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="167" y="226" width="952" height="564" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -578,47 +506,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/USAGE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="182" selection-end="182" vertical-scroll-proportion="0.1905972" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/secret/templates/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="17" selection-start="452" selection-end="452" vertical-scroll-proportion="0.64356434" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="0.04950495" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/secret/USAGE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/devise/devise_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="33" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="66" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/mysql/mysql_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/secret/secret_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="4" selection-start="240" selection-end="333" vertical-scroll-proportion="0.0">
@@ -633,37 +520,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/templates/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/templates/defaults.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="44" selection-start="1609" selection-end="1609" vertical-scroll-proportion="-5.2771087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/templates/default_layout.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="5" selection-start="426" selection-end="426" vertical-scroll-proportion="0.7172557">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_links.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_error_messages.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="100" selection-start="403" selection-end="403" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
@@ -675,9 +534,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_error_messages.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="410" selection-end="410" vertical-scroll-proportion="-2.1686747">
+          <folding>
+            <marker date="1346695563000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1346695563000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1346695563000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/templates/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/devise/templates/defaults.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="52" selection-start="211" selection-end="211" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/templates/defaults.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="47" selection-start="885" selection-end="885" vertical-scroll-proportion="0.62827224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_sidebar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="3" selection-start="211" selection-end="211" vertical-scroll-proportion="0.20477815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="49" selection-start="151" selection-end="151" vertical-scroll-proportion="0.256167">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_page.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/pages.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="81" selection-start="95" selection-end="95" vertical-scroll-proportion="0.080935255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="3" selection-start="134" selection-end="134" vertical-scroll-proportion="0.22770399">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_links.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="61" selection-start="251" selection-end="251" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/pages_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="22" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.7277677">
+        <state line="46" column="35" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="9" selection-start="346" selection-end="346" vertical-scroll-proportion="0.34031415">
           <folding />
         </state>
       </provider>

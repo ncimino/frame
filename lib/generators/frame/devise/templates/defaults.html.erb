@@ -9,7 +9,13 @@
     <nav class="span-24 append-bottom">
       <ul>
         <%%= render :partial => "pages/links", :collection => @display_pages.topbar, :as => :page, :locals => {:classes => "left hover"} %>
-        <%%= link_to '<li class="left hover">Pages</li>'.html_safe, pages_path %>
+        <%% if user_signed_in? %>
+            <%%= link_to '<li class="left hover">Account</li>'.html_safe, edit_user_registration_path %>
+            <%%= link_to '<li class="left hover">Sign out</li>'.html_safe, destroy_user_session_path, :method => :delete %>
+            <li class="right last">Signed in as <%%= current_user.email %></li>
+        <%% else %>
+            <%%= link_to '<li class="right hover">Sign in</li>'.html_safe, user_session_path %>
+        <%% end %>
       </ul>
     </nav>
     <banner>

@@ -21,7 +21,7 @@ module Frame
     def generate_scaffold
       generate("scaffold", "Page name:string title:string location:string content:text url:string ordinal:integer")
       append_to_file 'db/seeds.rb' do
-        "Page.create(:name => 'home', :title => 'Welcome to Home!', :content => '<h2>Content</h2>This is the content of the home page...', :location => 'topbar')"
+        "\nPage.create(:name => 'Home', :title => 'Welcome to Home!', :content => '<h2>Content</h2>This is the content of the home page...', :location => 'topbar', :url => '', :ordinal => '1')\n"
       end
       generate("scaffold_controller", "Page")
     end
@@ -42,10 +42,18 @@ module Frame
       end
     end
 
-    def create_links_partial
-      template '_links.html.erb' 'app/views/pages/_links.html.erb'
-      template '_error_messages.html.erb' 'app/views/shared/_error_messages.html.erb'
-      template '_sidebar.html.erb' 'app/views/shared/_sidebar.html.erb'
+    def create_pages_partials
+      template '_links.html.erb', 'app/views/pages/_links.html.erb'
+      template '_form.html.erb', 'app/views/pages/_form.html.erb'
+      template '_error_messages.html.erb', 'app/views/shared/_error_messages.html.erb'
+      template '_sidebar.html.erb', 'app/views/shared/_sidebar.html.erb'
+      template '_page.html.erb', 'app/views/pages/_page.html.erb'
+    end
+
+    def create_pages_views
+      template 'pages.html.erb', 'app/views/layouts/pages.html.erb'
+      template 'index.html.erb', 'app/views/pages/index.html.erb'
+      template 'show.html.erb', 'app/views/pages/show.html.erb'
     end
 
     def add_scopes
@@ -67,7 +75,7 @@ module Frame
   before_filter :get_variables
 
   def get_variables
-    @display_pages = Page.where("location <> \'off\'")
+    @display_pages = Page.where("location <> \'off\'").order("ordinal")
   end
 
 '
