@@ -75,7 +75,7 @@ module Frame
   before_filter :get_variables
 
   def get_variables
-    @display_pages = Page.where("location <> \'off\'").order("ordinal")
+    @display_pages = Page.order("ordinal")
   end
 
 '

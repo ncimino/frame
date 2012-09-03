@@ -1,0 +1,11 @@
+Description:
+    Generates the gitignore file.
+
+Usage:
+    Use to generate the gitignore file for a project.
+
+Examples:
+    rails generate frame:gitignore
+
+Methods:
+    There are several methods generated which you can use in your application.
