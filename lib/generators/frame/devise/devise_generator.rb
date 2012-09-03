@@ -21,6 +21,11 @@ module Frame
       end
     end
 
+    #test/development:
+    #    config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+    #production:
+    #    config.action_mailer.default_url_options = { :host => 'proj_name.com' }
+
     end
   end
 end 

@@ -28,8 +28,11 @@ module Frame
     end
 
     def replace_html_app
+      @title = Rails.application.class.parent_name
       template 'application.html.erb', 'app/views/layouts/application.html.erb'
     end
+
+    private
 
     def destination_path(path)
       File.join(destination_root, path)
