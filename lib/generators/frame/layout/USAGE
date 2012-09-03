@@ -1,0 +1,11 @@
+Description:
+    Generates pages model for web management.
+
+Usage:
+    Use to generate pages model.
+
+Examples:
+    rails generate frame:pages
+
+Methods:
+    There are several methods generated which you can use in your application.
