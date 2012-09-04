@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   #s.add_development_dependency 'mocha', '~> 0.9.8'
   #s.add_development_dependency 'bcrypt-ruby', '~> 2.1.2'
 
-  s.required_rubygems_version = ">= 1.3.4"
+  #s.required_rubygems_version = ">= 1.3.4"
 end

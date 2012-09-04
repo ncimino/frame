@@ -40,6 +40,17 @@ module Frame
       @page = Page.find(params[:id])
     end"
       end
+      gsub_file 'app/controllers/pages_controller.rb', /format.html # show.html.erb\n      format.json { render json: @page }/ do
+        "# show.html.erb
+      if @page
+        format.html
+        format.json { render json: @page }
+      else
+        format.html { redirect_to action: 'new' }
+        format.json { render json: @page.errors, status: :unprocessable_entity }
+      end
+        "
+      end
     end
 
     def create_pages_partials
@@ -79,6 +90,12 @@ module Frame
   end
 
 '
+      end
+    end
+
+    def update_db
+      if yes?("Would you like to migrate the database?")
+        rake("db:migrate")
       end
     end
 

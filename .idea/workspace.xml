@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fdf56dbf-de52-44b1-af27-d8d2e716303c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame.gemspec" afterPath="$PROJECT_DIR$/frame.gemspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/frame/pages/pages_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/frame/pages/pages_generator.rb" />
     </list>
     <ignored path="frame.iws" />
@@ -25,70 +26,25 @@
       <file leaf-file-name="pages_generator.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/pages_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="26" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.0">
+            <state line="43" column="24" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/index.html.erb">
+      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="2" selection-start="232" selection-end="604" vertical-scroll-proportion="0.6394316">
+            <state line="12" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_form.html.erb">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="62" selection-start="301" selection-end="301" vertical-scroll-proportion="-6.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/gitignore/templates/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gitignore_generator.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/gitignore/gitignore_generator.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="USAGE" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/gitignore/USAGE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="35" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_links.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_links.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="61" selection-start="251" selection-end="251" vertical-scroll-proportion="-3.125">
+            <state line="25" column="63" selection-start="547" selection-end="547" vertical-scroll-proportion="0.41163558">
               <folding />
             </state>
           </provider>
@@ -107,8 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/generators/frame/devise/devise_generator.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/frame/mysql/mysql_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/layout/pages_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/layout/layout_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/layout/templates/default_layout.html.erb" />
@@ -122,15 +76,17 @@
         <option value="$PROJECT_DIR$/lib/generators/frame/pages/templates/_form.html.erb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/gitignore/gitignore_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/frame/gitignore/USAGE" />
+        <option value="$PROJECT_DIR$/frame.gemspec" />
         <option value="$PROJECT_DIR$/lib/generators/frame/pages/pages_generator.rb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="558" />
-    <option name="y" value="25" />
-    <option name="width" value="1298" />
-    <option name="height" value="764" />
+    <option name="x" value="161" />
+    <option name="y" value="110" />
+    <option name="width" value="1759" />
+    <option name="height" value="1065" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -174,7 +130,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -232,10 +187,6 @@
               <option name="myItemId" value="frame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="secret" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -285,94 +236,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gitignore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gitignore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="devise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,8 +250,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../summit" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -497,15 +367,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="558" y="25" width="1298" height="764" extended-state="0" />
+    <frame x="161" y="110" width="1759" height="1065" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22836539" sideWeight="0.6708464" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16968988" sideWeight="0.6708464" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -515,6 +384,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -574,76 +444,36 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_error_messages.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="410" selection-end="410" vertical-scroll-proportion="-2.1686747">
-          <folding>
-            <marker date="1346695563000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346695563000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346695563000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/templates/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/devise/templates/defaults.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="52" selection-start="211" selection-end="211" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/layout/templates/defaults.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="47" selection-start="885" selection-end="885" vertical-scroll-proportion="0.62827224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_sidebar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="211" selection-end="211" vertical-scroll-proportion="0.20477815">
-          <folding />
-        </state>
+        <state line="8" column="3" selection-start="211" selection-end="211" vertical-scroll-proportion="0.20477815" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_page.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/pages.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="81" selection-start="95" selection-end="95" vertical-scroll-proportion="0.080935255">
-          <folding />
-        </state>
+        <state line="3" column="81" selection-start="95" selection-end="95" vertical-scroll-proportion="0.080935255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="134" selection-end="134" vertical-scroll-proportion="0.22770399">
-          <folding />
-        </state>
+        <state line="8" column="3" selection-start="134" selection-end="134" vertical-scroll-proportion="0.22770399" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_links.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="61" selection-start="251" selection-end="251" vertical-scroll-proportion="-3.125">
+        <state line="5" column="61" selection-start="251" selection-end="251" vertical-scroll-proportion="0.12798634">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="62" selection-start="301" selection-end="301" vertical-scroll-proportion="-6.25">
+        <state line="10" column="62" selection-start="301" selection-end="301" vertical-scroll-proportion="0.16230367">
           <folding />
         </state>
       </provider>
@@ -664,28 +494,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/gitignore/gitignore_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+        <state line="12" column="40" selection-start="316" selection-end="316" vertical-scroll-proportion="0.29508197">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/gitignore/USAGE">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+        <state line="11" column="35" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="31" selection-start="33" selection-end="33" vertical-scroll-proportion="0.051194537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/frame/devise/devise_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="321" selection-end="604" vertical-scroll-proportion="0.23051591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="43" selection-start="986" selection-end="986" vertical-scroll-proportion="0.33407572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/pages_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="26" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.0">
+        <state line="43" column="24" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/frame/pages/templates/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="2" selection-start="232" selection-end="604" vertical-scroll-proportion="0.6394316">
+        <state line="25" column="63" selection-start="547" selection-end="547" vertical-scroll-proportion="0.41163558">
           <folding />
         </state>
       </provider>
