@@ -18,6 +18,9 @@ You must add frame as a gem:
 ```ruby
 # Gemfile
 gem 'frame' #, :path => '/home/admin/frame/'
+
+
+Then run the bundler:
 ```
 ```console
 bundle

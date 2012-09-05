@@ -15,8 +15,12 @@ module Frame
     end
 
     def remove_index
-      #remove_file "public/index.html"
+      filename="public/index.html"
+      if File.exists?("filename") and yes?("Would you like to remove '#{filename}'?")
+        remove_file filename
+      end
     end
+    #Frame.Generators.PagesGenerator.remove_index
 
     def add_default_layout
       template 'defaults.html.erb', 'app/views/layouts/defaults.html.erb'

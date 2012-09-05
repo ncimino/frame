@@ -15,7 +15,10 @@ module Frame
     end
 
     def remove_index
-      #remove_file "public/index.html"
+      filename="public/index.html"
+      if File.exists?("filename") and yes?("Would you like to remove '#{filename}'?")
+        remove_file filename
+      end
     end
 
     def generate_scaffold
@@ -81,7 +84,7 @@ module Frame
       end
     end
 
-    def application_page_loader
+    def add_application_page_loader
       inject_into_class "app/controllers/application_controller.rb", ApplicationController do '
   before_filter :get_variables
 
