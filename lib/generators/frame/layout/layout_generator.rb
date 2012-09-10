@@ -29,6 +29,7 @@ module Frame
 
     def add_page_helpers
       template 'application_helper.rb', 'app/helpers/application_helper.rb'
+      template 'econ64.gif', 'app/assets/images/econ64.gif'
     end
 
     def replace_html_app

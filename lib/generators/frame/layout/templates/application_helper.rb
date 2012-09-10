@@ -7,6 +7,6 @@ module ApplicationHelper
   end
 
   def logo
-    image_tag("econtriver_logo.gif", {:alt => "eContriver", :class => "round", :style => "width: 192px; height: 50px"})
+    image_tag("econ64.gif", {:alt => "eContriver", :class => "round", :style => "width: 64px; height: 64px"})
   end
 end

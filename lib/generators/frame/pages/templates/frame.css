@@ -1,5 +1,7 @@
 body {
-    font-family: "Courier New",Courier,monospace;
+    /*
+    *font-family: "Courier New",Courier,monospace;
+    */
 }
 
 .ui-icon-grip-solid-horizontal {
@@ -50,6 +52,11 @@ select {
 nav ul {
     margin: 0;
     padding: 0 0.5em;
+}
+
+h1 {
+    /*font-family: Livory-RegularItalic;*/
+    font-family: Georgia,Palatino,Times,"MS Serif",serif;
 }
 
 sidebar nav ul li {
