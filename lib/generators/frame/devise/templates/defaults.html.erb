@@ -19,8 +19,8 @@
       </ul>
     </nav>
     <banner>
-      <%%= link_to logo, root_path, {:class => "right"} %>
-      <h1 class="left alt prepend-1 append-1"><%%= yield(:title) %></h1>
+      <%%= link_to logo, root_path, {:class => "right prepend-1"} %>
+      <h1 class="left alt append-1"><%%= yield(:title) %></h1>
       <%% flash.each do |key, value| %>
           <div id="notice" class="left flash <%%= key %>"><%%= value %></div>
       <%% end %>

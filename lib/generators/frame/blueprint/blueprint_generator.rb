@@ -19,7 +19,6 @@ module Frame
       Dir.chdir tmp_dir
       system("git checkout v1.0.1")
       Dir.chdir File.join(tmp_dir, 'lib')
-      #system("sudo bundle install --without test")
       system("bundle install --without test")
       system("ruby compress.rb -o #{dest_dir}")   \
 
