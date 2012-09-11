@@ -1,7 +1,15 @@
 body {
-    /*
-    *font-family: "Courier New",Courier,monospace;
-    */
+}
+
+a {
+    color: gray;
+    border: none;
+}
+
+.box {
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    background: #f0f0f0;
 }
 
 .ui-icon-grip-solid-horizontal {
@@ -56,14 +64,19 @@ nav ul {
 
 h1 {
     /*font-family: Livory-RegularItalic;*/
-    font-family: Georgia,Palatino,Times,"MS Serif",serif;
+    /*font-family: Georgia,Palatino,Times,"MS Serif",serif;*/
 }
 
 sidebar nav ul li {
     list-style-type: none;
-    /*padding: 0.5em;*/
-    /*border-bottom: 2px solid black;*/
-    /*color: white;*/
+    color: black;
+    text-transform:uppercase;
+    font-weight: bolder;
+}
+
+sidebar nav ul li:hover {
+    text-decoration: underline;
+    color: #ff7f50;
 }
 
 header nav ul li {

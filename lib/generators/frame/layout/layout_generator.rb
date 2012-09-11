@@ -29,12 +29,21 @@ module Frame
 
     def add_page_helpers
       template 'application_helper.rb', 'app/helpers/application_helper.rb'
+    end
+
+    def add_images
       template 'econ64.gif', 'app/assets/images/econ64.gif'
+      template 'favicon.ico', 'app/assets/images/favicon.ico'
     end
 
     def replace_html_app
       @title = Rails.application.class.parent_name
       template 'application.html.erb', 'app/views/layouts/application.html.erb'
+    end
+
+    def copy_css
+      template 'frame.css', 'app/assets/stylesheets/frame.css'
+      puts "==> Add the following to the app/assets/stylesheets/application.css file: \n *= require frame"
     end
 
     private

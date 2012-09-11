@@ -102,12 +102,6 @@ module Frame
       end
     end
 
-    def copy_css
-      template 'favicon.ico', 'app/assets/images/favicon.ico'
-      template 'frame.css', 'app/assets/stylesheets/frame.css'
-      puts "==> Add a the following to the app/assets/stylesheets/application.css file: \n *= require frame"
-    end
-
     private
 
     def destination_path(path)

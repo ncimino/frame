@@ -26,6 +26,16 @@ module Frame
     #production:
     #    config.action_mailer.default_url_options = { :host => 'proj_name.com' }
 
+    def add_default_layout
+      template 'defaults.html.erb', 'app/views/layouts/defaults.html.erb'
+    end
+
+    def update_db
+      if yes?("Would you like to migrate the database?")
+        rake("db:migrate")
+      end
+    end
+
     end
   end
 end 
