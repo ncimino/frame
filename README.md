@@ -17,11 +17,11 @@ cd tester
 You must add frame as a gem:
 ```ruby
 # Gemfile
-gem 'frame' #, :path => '/home/admin/frame/'
+gem 'frame'#, :path => '/home/admin/frame/'
+```
 
 
 Then run the bundler:
-```
 ```console
 bundle
 ```
@@ -29,8 +29,7 @@ bundle
 To just see what frame was designed to do run (you must hit y/a for the overwrites):
 
 ```console
-rails generate frame:pages
-rails generate frame:layout
+rails generate frame:all
 rails server
 
 ```

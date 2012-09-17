@@ -20,11 +20,21 @@ module Frame
       system("git checkout v1.0.1")
       Dir.chdir File.join(tmp_dir, 'lib')
       system("bundle install --without test")
-      system("ruby compress.rb -o #{dest_dir}")   \
+      system("ruby compress.rb -o #{dest_dir}")
+    end
 
-      puts "\n\n==> Added the following to you app/assets/stylesheets/application.css file:\n *= require ie\n *= require screen"
+    def adjust_app_css
+      file=destination_path('app/assets/stylesheets/application.css')
+      add_if_missing(file, " *= require screen\n", :after => " *= require_self\n")
+      add_if_missing(file, " *= require ie\n", :after => " *= require_self\n")
+      gsub_file file, / \*\= require_tree \.\n/, ''
+    end
 
-      end
+    private
+
+    def destination_path(path)
+      File.join(destination_root, path)
+    end
 
     end
   end

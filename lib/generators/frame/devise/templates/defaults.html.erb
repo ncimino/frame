@@ -11,8 +11,8 @@
         <%%= render :partial => "pages/links", :collection => @display_pages.topbar, :as => :page, :locals => {:classes => "left hover"} %>
         <%% if user_signed_in? %>
             <%%= link_to '<li class="left hover">Account</li>'.html_safe, edit_user_registration_path %>
-            <%%= link_to '<li class="left hover">Sign out</li>'.html_safe, destroy_user_session_path, :method => :delete %>
-            <li class="right last">Signed in as <%%= current_user.email %></li>
+            <%%= link_to '<li class="right hover">Sign out</li>'.html_safe, destroy_user_session_path, :method => :delete %>
+            <li class="right last lighter"><%%= current_user.email %></li>
         <%% else %>
             <%%= link_to '<li class="right hover">Sign in</li>'.html_safe, user_session_path %>
         <%% end %>
@@ -33,7 +33,9 @@
 <%% end %>
 
 <%% content_for :userbar do %>
-    <%%= render 'shared/sidebar', :sidebar => @display_pages.userbar %>
+    <%% if user_signed_in? %>
+        <%%= render 'shared/sidebar', :sidebar => @display_pages.userbar %>
+    <%% end %>
 <%% end %>
 
 <%% content_for :footer do %>

@@ -10,6 +10,7 @@ a {
     padding: 1.5em;
     margin-bottom: 1.5em;
     background: #f0f0f0;
+    border: 3px outset gray;
 }
 
 .ui-icon-grip-solid-horizontal {
@@ -53,6 +54,10 @@ li.ui-state-highlight {
     top: 0;
 }
 
+.lighter {
+    font-weight: lighter;
+}
+
 select {
     max-width: 40em;
 }
@@ -67,14 +72,14 @@ h1 {
     /*font-family: Georgia,Palatino,Times,"MS Serif",serif;*/
 }
 
-sidebar nav ul li {
+aside nav ul li {
     list-style-type: none;
     color: black;
     text-transform:uppercase;
     font-weight: bolder;
 }
 
-sidebar nav ul li:hover {
+aside nav ul li:hover {
     text-decoration: underline;
     color: #ff7f50;
 }
@@ -84,6 +89,7 @@ header nav ul li {
     padding: 0.5em;
     border-bottom: 2px solid black;
     color: white;
+    font-weight: bolder;
 }
 
 footer nav ul li {
@@ -91,6 +97,7 @@ footer nav ul li {
     padding: 0.5em;
     border-top: 2px solid black;
     color: white;
+    font-weight: bolder;
 }
 
 nav a {

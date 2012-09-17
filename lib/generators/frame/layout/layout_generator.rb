@@ -10,9 +10,10 @@ module Frame
 
     class_option :force, :type => :boolean, :default => false, :desc => "Force file regeneration"
 
-    def add_gems
-      add_gem "mysql2"
-    end
+    #def add_gems
+    #  add_gem "mysql2"
+    #end
+    #Frame.Generators.PagesGenerator.add_gems
 
     def remove_index
       filename="public/index.html"
@@ -43,7 +44,7 @@ module Frame
 
     def copy_css
       template 'frame.css', 'app/assets/stylesheets/frame.css'
-      puts "==> Add the following to the app/assets/stylesheets/application.css file: \n *= require frame"
+      add_if_missing('app/assets/stylesheets/application.css', " *= require frame\n", :after => " *= require_self\n")
     end
 
     private

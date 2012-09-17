@@ -8,6 +8,10 @@ module Frame
 
     desc "Installs Active Admin."
 
+    #generate("frame:pages")
+    #generate("frame:layout")
+    #generate("frame:devise")
+
     def add_gems
       #add_gem("active_admin")
       add_gem("sass-rails", :group => "test")
@@ -40,7 +44,13 @@ module Frame
     end
 
     def remove_pages_cud
-      #remove the pages create, update, and destroy - leave reading
+      filenames = ["app/views/pages/new.html.erb", "app/views/pages/edit.html.erb", "app/views/pages/index.html.erb", "app/views/pages/_form.html.erb"]
+        filenames.each { |filename|
+          if File.exists?(filename) and yes?("Would you like to remove '#{filename}'?")
+            remove_file filename
+          end
+        }
+      template 'show.html.erb', 'app/views/pages/show.html.erb'
     end
 
     private
