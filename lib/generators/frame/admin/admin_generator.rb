@@ -8,20 +8,12 @@ module Frame
 
     desc "Installs Active Admin."
 
-    #generate("frame:pages")
-    #generate("frame:layout")
-    #generate("frame:devise")
-
     def add_gems
-      #add_gem("active_admin")
       add_gem("sass-rails", :group => "test")
       add_gem("meta_search", :group => "test")
     end
 
     def install_active_admin
-      #gem("sass-rails", :group => "test")
-      #gem("meta_search", :group => "test")
-
       if yes?("Would you like to install Active Admin?")
         gem("activeadmin")
         Bundler.with_clean_env do
@@ -41,6 +33,16 @@ module Frame
 
     def update_admin_form
       template 'pages.rb', 'app/admin/pages.rb'
+    end
+
+    def update_pages_controller
+      template 'pages_controller.rb', 'app/controller/pages_controller.rb'
+    end
+
+    def cleanup_page_routes
+      file='config/routes.rb'
+      add_if_missing(file, "  match 'pages/:id' => 'pages#show'", :after => "  resources :pages\n")
+      comment_lines file, /  resources :pages/
     end
 
     def remove_pages_cud

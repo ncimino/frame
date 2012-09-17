@@ -8,40 +8,18 @@ module Frame
 
     desc "Update MySQL with user priveleges."
 
-
-    #def reset_db
-    #  Bundler.with_clean_env do
-    #    run "gem install activerecord-mysql2-adapter"
-    #    run "bundle"
-    #  end
-    #  begin
-    #    rake("db:reset")
-    #  rescue
-    #    puts "Error #{$!}"
-    #  ensure
-    #    #this_code_will_execute_always()
-    #  end
-    #end
-
     def add_gems
-      #add_gem "mysql2"
       gem("mysql2")
-      #gem("activerecord-mysql2-adapter")
       comment_lines 'Gemfile', /gem 'sqlite3'/
-      #run "bundle"
       Bundler.with_clean_env do
-        #run "gem install activerecord-mysql2-adapter"
         run "bundle"
       end
-      #Bundler.install
     end
 
     def drop_db
       config = YAML.load_file('config/database.yml')
       db = config[Rails.env]["database"]
-      #host = config[Rails.env]["host"]
       puts "database: #{db}"
-      #puts "host: #{host}"
       output = create_file 'tmp/drop_db.sql', "DROP DATABASE IF EXISTS #{db};"
       puts "output: #{output}\nEnter mysql root password"
       system "mysql -u root -p < #{output}"
