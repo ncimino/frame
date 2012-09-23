@@ -41,7 +41,7 @@ module Frame
 
     def cleanup_page_routes
       file='config/routes.rb'
-      add_if_missing(file, "  match 'pages/:id' => 'pages#show'", :after => "  resources :pages\n")
+      add_if_missing(file, "  match 'pages/:id' => 'pages#show', :as => :page", :after => "  resources :pages\n")
       comment_lines file, /  resources :pages/
     end
 

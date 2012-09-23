@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name         = 'frame'
-  s.version      = '0.0.3'
-  s.date         = '2012-09-02'
+  s.version      = '0.0.4'
+  s.date         = '2012-09-23'
   s.summary      = "Frame will setup various Ruby on Rails projects with an instantly usable application."
   s.description  = "Frame will setup various Ruby on Rails projects with an instantly usable application. The user can choose if they want authentication with devise, omniauth, and uses active_admin."
   s.authors      = ["Nik Cimino"]
@@ -11,11 +11,21 @@ Gem::Specification.new do |s|
   s.require_path = "lib"
   s.rubyforge_project = s.name
 
-  #s.add_development_dependency 'rspec-rails', '~> 2.0.1'
-  #s.add_development_dependency 'cucumber', '~> 0.9.2'
-  #s.add_development_dependency 'rails', '~> 3.0.0'
-  #s.add_development_dependency 'mocha', '~> 0.9.8'
-  #s.add_development_dependency 'bcrypt-ruby', '~> 2.1.2'
+  #s.required_rubygems_version = ">= 1.9.3"
 
-  #s.required_rubygems_version = ">= 1.3.4"
+  s.add_development_dependency 'activeadmin'
+  s.add_development_dependency 'coffee-rails', '~> 3.2.1'
+  s.add_development_dependency 'cucumber-rails'
+  s.add_development_dependency 'devise'
+  s.add_development_dependency 'jquery-rails'
+  s.add_development_dependency 'meta_search'
+  s.add_development_dependency 'mysql2'
+  s.add_development_dependency 'oauth2'
+  s.add_development_dependency 'omniauth'
+  s.add_development_dependency 'omniauth-google-oauth2'
+  s.add_development_dependency 'omniauth-twitter'
+  s.add_development_dependency 'rails', '= 3.2.8'
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'sass-rails', '~> 3.2.3'
+  s.add_development_dependency 'uglifier', '>= 1.0.3'
 end

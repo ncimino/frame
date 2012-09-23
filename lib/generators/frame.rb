@@ -13,11 +13,11 @@ module Frame
 
       private
 
-      def add_if_missing(file, string, options = {})
+      def add_if_missing(file, string, options = {}, unless_match = string)
         puts "\n\n==> Adding the following to '#{file}' file:\n'#{string}' unless it already exists"
         file_content = File.read(file)
         #File.open(file, 'a') { |f| f.write("\n") } unless file_content =~ /\n\Z/
-        insert_into_file file, string, options unless file_content.include? string
+        insert_into_file file, string, options unless file_content.include? unless_match
       end
 
       def add_gem(name, options = {})

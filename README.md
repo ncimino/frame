@@ -30,6 +30,7 @@ To just see what frame was designed to do run (you must hit y/a for the overwrit
 
 ```console
 rails generate frame:all
+rails generate frame:omniauth
 rails server
 
 ```

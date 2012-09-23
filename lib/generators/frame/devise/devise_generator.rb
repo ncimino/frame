@@ -22,6 +22,7 @@ module Frame
         model_name = ask("What would you like the user model to be called? [#{default_model}]")
         model_name = default_model if model_name.blank?
         generate("devise", model_name)
+        generate("devise:views")
       end
     end
 
