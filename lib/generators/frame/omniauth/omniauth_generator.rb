@@ -68,8 +68,12 @@ module Frame
 files = ['config/initializers/omniauth.rb','config/database.yml','config/initializers/secret_token.rb']
 
 domain = \"#{Rails.application.class.parent_name.downcase}.econtriver.com\"
-set :user, \"root\"  # The server's user for deploys
-set :deploy_to, \"/srv/www/\#{domain}\"
+user = \"root\"  # The server's user for deploys
+deploy_to = \"/srv/www/\#{domain}\"
+
+task :setup_server_db do
+  system(\"ssh \#{user}@\#{domain} 'cd \#{File.join(deploy_to,'current')};rake db:setup RAILS_ENV=production'\")
+end
 
 task :put_secret do
   files.each do |f|
@@ -82,6 +86,9 @@ task :get_secret do
     system(\"scp \#{user}@\#{domain}:\#{File.join(deploy_to,'private',f)} \#{f}\")
   end
 end", :after => "Tester::Application.load_tasks\n")
+
+
+      gsub_file 'config/environments/production.rb', /config\.assets\.compile = false/, 'config.assets.compile = true'
 
     end
 

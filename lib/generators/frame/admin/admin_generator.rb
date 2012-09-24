@@ -36,7 +36,7 @@ module Frame
     end
 
     def update_pages_controller
-      template 'pages_controller.rb', 'app/controller/pages_controller.rb'
+      template 'pages_controller.rb', 'app/controllers/pages_controller.rb'
     end
 
     def cleanup_page_routes
