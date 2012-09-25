@@ -33,36 +33,36 @@ module Frame
       template 'omniauth_callbacks_controller.rb', 'app/controllers/users/omniauth_callbacks_controller.rb'
 
       add_if_missing('app/models/user.rb', '
-      def self.find_for_twitter_oauth(auth, signed_in_resource=nil)
-        Rails.logger.debug "(DEBUG) auth: #{auth.to_yaml}"
-        user = User.where(:provider => auth.provider, :uid => auth.uid).first
-        unless user
-                            #name:auth.extra.raw_info.name,
-          user = User.create(
-                             provider:auth.provider,
-                             uid:auth.uid,
-                             email:auth.info.email,
-                             password:Devise.friendly_token[0,20]
-          )
-        end
-        user
-      end', :before => "\nend")
+  def self.find_for_twitter_oauth(auth, signed_in_resource=nil)
+    Rails.logger.debug "(DEBUG) auth: #{auth.to_yaml}"
+    user = User.where(:provider => auth.provider, :uid => auth.uid).first
+    unless user
+                        #name:auth.extra.raw_info.name,
+      user = User.create(
+                         provider:auth.provider,
+                         uid:auth.uid,
+                         email:auth.info.email,
+                         password:Devise.friendly_token[0,20]
+      )
+    end
+    user
+  end', :before => "\nend")
 
       add_if_missing('app/models/user.rb', '
-      def self.find_for_google_oauth(auth, signed_in_resource=nil)
-        Rails.logger.debug "(DEBUG) auth: #{auth.to_yaml}"
-        user = User.where(:provider => auth.provider, :uid => auth.uid).first
-        unless user
-                            #name:auth.extra.raw_info.name,
-          user = User.create(
-                             provider:auth.provider,
-                             uid:auth.uid,
-                             email:auth.info.email,
-                             password:Devise.friendly_token[0,20]
-          )
-        end
-        user
-      end', :before => "\nend")
+  def self.find_for_google_oauth2(access_token, signed_in_resource=nil)
+    Rails.logger.debug "(DEBUG) access_token: #{access_token.to_yaml}"
+    data = access_token.info
+    user = User.where(:email => data["email"]).first
+
+    unless user
+      #name: data["name"],
+      user = User.create(
+                         email: data["email"],
+                         password: Devise.friendly_token[0,20]
+      )
+    end
+    user
+  end', :before => "\nend")
 
       add_if_missing('Rakefile', "
 files = ['config/initializers/omniauth.rb','config/database.yml','config/initializers/secret_token.rb']

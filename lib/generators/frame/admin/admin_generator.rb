@@ -8,6 +8,9 @@ module Frame
 
     desc "Installs Active Admin."
 
+    # Need to see the production environment with:
+    #User.create!(:email=>'test@test.com',:username=>'test',:password=>'password')
+
     def add_gems
       add_gem("sass-rails", :group => "test")
       add_gem("meta_search", :group => "test")
