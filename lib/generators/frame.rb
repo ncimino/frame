@@ -7,9 +7,9 @@ module Frame
         @_frame_source_root ||= File.expand_path(File.join(File.dirname(__FILE__), 'frame', generator_name, 'templates'))
       end
 
-      #def self.banner
-      #  "rails generate frame:#{generator_name} #{self.arguments.map{ |a| a.usage }.join(' ')} [options]"
-      #end
+      def self.banner
+        "rails generate frame:#{generator_name} #{self.arguments.map{ |a| a.usage }.join(' ')} [options]"
+      end
 
       private
 

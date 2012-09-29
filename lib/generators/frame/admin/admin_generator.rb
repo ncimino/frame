@@ -8,7 +8,7 @@ module Frame
 
     desc "Installs Active Admin."
 
-    # Need to see the production environment with:
+    # Need to seed the production environment with:
     #User.create!(:email=>'test@test.com',:username=>'test',:password=>'password')
 
     def add_gems

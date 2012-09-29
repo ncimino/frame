@@ -15,7 +15,7 @@ class PagesController < ApplicationController
         format.html
         format.json { render json: @page }
       else
-        format.html { redirect_to action: 'new' }
+        format.html { redirect_to :admin_root }
         format.json { render json: @page.errors, status: :unprocessable_entity }
       end
         

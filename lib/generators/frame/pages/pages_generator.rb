@@ -84,7 +84,7 @@ module Frame
         #run "bundle"
 
         string='
-      validates_presence_of :name
+      validates_presence_of :name, :location
 
       scope :topbar, where(:location => "topbar")
       scope :sidebar, where(:location => "sidebar")
