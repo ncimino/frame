@@ -53,6 +53,8 @@ module Frame
 
     def generate_registration_controller
       generate("controller Registrations edit new")
+      template 'registrations/edit.html.erb', 'app/views/registrations/edit.html.erb'
+      template 'registrations/new.html.erb', 'app/views/registrations/new.html.erb'
       template 'registrations_controller.rb', 'app/controllers/registrations_controller.rb'
     end
 
