@@ -26,31 +26,25 @@ module Frame
       end
     end
 
-    #def update_initializers
-    #  gsub_file 'config/initializers/devise.rb', /config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"/ do
-    #    default_mailer = "webmaster@proj_name.com"
-    #    mailer_sender = ask("What is the mail sender address? [#{default_mailer}]")
-    #    mailer_sender = default_mailer if mailer_sender.blank?
-    #    "config.mailer_sender = \"#{mailer_sender}\""
-    #  end
-    #end
+    def update_initializers
+      gsub_file 'config/initializers/devise.rb', /config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"/ do
+        default_mailer = "webmaster@econtriver.com"
+        mailer_sender = ask("What is the mail sender address? [#{default_mailer}]")
+        mailer_sender = default_mailer if mailer_sender.blank?
+        "config.mailer_sender = \"#{mailer_sender}\""
+      end
+    end
 
     def add_default_layout
       template 'defaults.html.erb', 'app/views/layouts/defaults.html.erb'
     end
 
-    def update_db
-      if yes?("Would you like to migrate the database?")
-        rake("db:migrate")
-      end
-    end
+
+      #private
 
 
-      private
-
-
-    def update_environmentss
-      default_mailer = "proj_name.com"
+    def update_environments
+      default_mailer = "econtriver.com"
       action_mailer = ask("What is the action mailer domain (normally just the domain)? [#{default_mailer}]")
       action_mailer = default_mailer if action_mailer.blank?
       application(nil, :env => "production") do
@@ -61,6 +55,12 @@ module Frame
       end
       application(nil, :env => "development") do
         "config.action_mailer.default_url_options = { :host => 'localhost:3000' }"
+      end
+    end
+
+    def update_db
+      if yes?("Would you like to migrate the database?")
+        rake("db:migrate")
       end
     end
 

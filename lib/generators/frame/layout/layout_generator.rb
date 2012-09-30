@@ -10,18 +10,12 @@ module Frame
 
     class_option :force, :type => :boolean, :default => false, :desc => "Force file regeneration"
 
-    #def add_gems
-    #  add_gem "mysql2"
-    #end
-    #Frame.Generators.PagesGenerator.add_gems
-
     def remove_index
       filename="public/index.html"
-      if File.exists?("filename") and yes?("Would you like to remove '#{filename}'?")
+      if File.exists?(filename) and yes?("Would you like to remove '#{filename}'?")
         remove_file filename
       end
     end
-    #Frame.Generators.PagesGenerator.remove_index
 
     def add_default_layout
       template 'defaults.html.erb', 'app/views/layouts/defaults.html.erb'
