@@ -30,9 +30,9 @@ module Frame
       initializer("secret_token.rb", "#{Rails.application.class.parent_name}::Application.config.secret_token = '#{secret}'")
     end
 
-    def
-      @title = Rails.application.class.parent_name.downcase
-      template 'Rakefile', 'Rakefile'
+    def create_rake_file
+      #@title = Rails.application.class.parent_name.downcase
+      template('Rakefile')
     end
 
     end

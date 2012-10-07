@@ -9,7 +9,7 @@ module Frame
     desc "Installs Active Admin."
 
     # Need to seed the production environment with:
-    #User.create!(:email=>'test@test.com',:username=>'test',:password=>'password')
+    #AdminUser.create!(:email=>'test@test.com',:username=>'test',:password=>'password')
 
     def add_gems
       add_gem("sass-rails", :group => "test")

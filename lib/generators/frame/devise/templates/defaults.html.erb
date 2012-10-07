@@ -15,6 +15,7 @@
             <li class="right last lighter"><%%= current_user.email %></li>
         <%% else %>
             <%%= link_to '<li class="right hover">Sign in</li>'.html_safe, user_session_path %>
+            <%%= link_to '<li class="right hover">Sign up</li>'.html_safe, new_user_registration_path %>
         <%% end %>
       </ul>
     </nav>
