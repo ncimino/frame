@@ -24,6 +24,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'omniauth'
   s.add_development_dependency 'omniauth-google-oauth2'
   s.add_development_dependency 'omniauth-twitter'
+  s.add_development_dependency 'omniauth-github'
+  s.add_development_dependency 'omniauth-facebook'
   s.add_development_dependency 'rails', '= 3.2.8'
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'sass-rails', '~> 3.2.3'
