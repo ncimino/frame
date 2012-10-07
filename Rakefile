@@ -19,7 +19,10 @@ desc "Run tests"
 task :default => :test
 
 task :build_gem do
-  gem_version = ask("What is the gem version (x.x.x)?")
+  gem_version = ''
+  STDOUT.puts "What is the gem version (x.x.x)?"
+  gem_version = STDIN.gets.chomp
+  #gem_version = ask("What is the gem version (x.x.x)?")
   system("gem build frame.gemspec")
   system("gem push frame-#{gem_version}.gem")
   system("git tag -a v#{gem_version} -m 'version #{gem_version}'")

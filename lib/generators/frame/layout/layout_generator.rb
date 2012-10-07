@@ -18,26 +18,26 @@ module Frame
     end
 
     def add_default_layout
-      template 'defaults.html.erb', 'app/views/layouts/defaults.html.erb'
-      template 'default_layout.html.erb', 'app/views/layouts/default_layout.html.erb'
+      template('app/views/layouts/defaults.html.erb')
+      template('app/views/layouts/default_layout.html.erb')
     end
 
     def add_page_helpers
-      template 'application_helper.rb', 'app/helpers/application_helper.rb'
+      template('app/helpers/application_helper.rb')
     end
 
     def add_images
-      template 'econ64.gif', 'app/assets/images/econ64.gif'
-      template 'favicon.ico', 'app/assets/images/favicon.ico'
+      template('app/assets/images/econ_f_64.gif')
+      template('app/assets/images/favicon.ico')
     end
 
     def replace_html_app
       @title = Rails.application.class.parent_name
-      template 'application.html.erb', 'app/views/layouts/application.html.erb'
+      template('app/views/layouts/application.html.erb')
     end
 
     def copy_css
-      template 'frame.css', 'app/assets/stylesheets/frame.css'
+      template('app/assets/stylesheets/frame.css')
       add_if_missing('app/assets/stylesheets/application.css', " *= require frame\n", :after => " *= require_self\n")
     end
 

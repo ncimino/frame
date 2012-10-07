@@ -35,11 +35,11 @@ module Frame
     end
 
     def update_admin_form
-      template 'pages.rb', 'app/admin/pages.rb'
+      template('app/admin/pages.rb')
     end
 
     def update_pages_controller
-      template 'pages_controller.rb', 'app/controllers/pages_controller.rb'
+      template('app/controllers/pages_controller.rb')
     end
 
     def cleanup_page_routes
@@ -55,7 +55,7 @@ module Frame
             remove_file filename
           end
         }
-      template 'show.html.erb', 'app/views/pages/show.html.erb'
+      template('app/views/pages/show.html.erb')
     end
 
     private
