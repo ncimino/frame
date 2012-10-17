@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name         = 'frame'
-  s.version      = '0.0.5'
-  s.date         = '2012-10-07'
+  s.version      = '0.1.0'
+  s.date         = '2012-10-16'
   s.summary      = "Frame will setup various Ruby on Rails projects with an instantly usable application."
   s.description  = "Frame will setup various Ruby on Rails projects with an instantly usable application. The user can choose if they want authentication with devise, omniauth, and uses active_admin."
   s.authors      = ["Nik Cimino"]

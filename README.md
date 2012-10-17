@@ -1,8 +1,8 @@
 Frame
 =====
 
-Frame is used to instantly setup websites with just a couple of commands.  Frame users several other gems to build the
-webpages up.  Once they are created, then they can be fully customized and grow independent of frame.
+Frame is used to instantly setup websites with just a couple of commands.  Frame uses several other gems to build the
+websites.  Once they are created, then they can be fully customized and grow independent of frame.
 
 
 ## Getting Started
