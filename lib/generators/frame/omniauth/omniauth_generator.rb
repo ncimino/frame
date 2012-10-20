@@ -54,6 +54,7 @@ module Frame
       remove_file('app/views/authentications/destroy.html.erb')
       # Need this index?
       #template('app/views/authentications/index.html.erb')
+      #remove_file('app/views/authentications')
     end
 
     def g_registration_controller

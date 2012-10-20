@@ -4,19 +4,19 @@
   <%%= devise_error_messages! %>
 
   <div><%%= f.label :email %><br />
-  <%%= f.email_field :email %></div>
+  <%%= f.email_field :email, :class => "text"  %></div>
 
   <div><%%= f.label :username %><br />
-  <%%= f.text_field :username %></div>
+  <%%= f.text_field :username, :class => "text"  %></div>
 
   <div><%%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-  <%%= f.password_field :password, :autocomplete => "off" %></div>
+  <%%= f.password_field :password, :autocomplete => "off", :class => "text"  %></div>
 
   <div><%%= f.label :password_confirmation %><br />
-  <%%= f.password_field :password_confirmation %></div>
+  <%%= f.password_field :password_confirmation, :class => "text"  %></div>
 
   <div><%%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-  <%%= f.password_field :current_password %></div>
+  <%%= f.password_field :current_password, :class => "text"  %></div>
 
   <div><%%= f.submit "Update" %></div>
 <%% end %>

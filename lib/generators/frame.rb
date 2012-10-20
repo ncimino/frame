@@ -21,7 +21,7 @@ module Frame
       end
 
       def add_gem(name, options = {})
-        #add_if_missing(destination_path("Gemfile"),)
+        #add_if_missing(destination_path("Gemfile"), name, options)
         gemfile_content = File.read(destination_path("Gemfile"))
         File.open(destination_path("Gemfile"), 'a') { |f| f.write("\n") } unless gemfile_content =~ /\n\Z/
         gem name, options unless gemfile_content.include? name
