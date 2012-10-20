@@ -9,7 +9,7 @@ module Frame
     desc "Installs Gitignore if it doesn't already exist."
       
     def create_gitignore
-      template ".gitignore", ".gitignore"
+      template ".gitignore"
     end
 
     end

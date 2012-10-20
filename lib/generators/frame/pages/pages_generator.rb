@@ -9,7 +9,7 @@ module Frame
 
       desc "Setup Pages."
 
-      class_option :force, :type => :boolean, :default => false, :desc => "Force file regeneration"
+      class_option :force, :type => :boolean, :default => true, :desc => "Force file overwriting"
 
       #def add_gems
       #  #add_gem "mysql2"
@@ -26,9 +26,9 @@ module Frame
 
       def remove_index
         filename="public/index.html"
-        if File.exists?(filename) and yes?("Would you like to remove '#{filename}'?")
+        #if File.exists?(filename) and yes?("Would you like to remove '#{filename}'?")
           remove_file filename
-        end
+        #end
       end
 
       def generate_scaffold
@@ -40,7 +40,7 @@ module Frame
       end
 
       def add_root_route
-        insert_into_file 'config/routes.rb', "  root :to => 'pages#show', :id => 0\n", :after => "#{Rails.application.class.parent_name}::Application.routes.draw do\n"
+        insert_into_file 'config/routes.rb', "  root :to => 'pages#show', :id => 0\n  get 'sessions/new'\n", :after => "#{Rails.application.class.parent_name}::Application.routes.draw do\n"
       end
 
       def update_page_controller
@@ -67,17 +67,17 @@ module Frame
       end
 
       def create_pages_partials
-        template '_links.html.erb', 'app/views/pages/_links.html.erb'
-        template '_form.html.erb', 'app/views/pages/_form.html.erb'
-        template '_error_messages.html.erb', 'app/views/shared/_error_messages.html.erb'
-        template '_sidebar.html.erb', 'app/views/shared/_sidebar.html.erb'
-        template '_page.html.erb', 'app/views/pages/_page.html.erb'
+        template('app/views/pages/_form.html.erb')
+        template('app/views/pages/_links.html.erb')
+        template('app/views/pages/_page.html.erb')
+        template('app/views/shared/_error_messages.html.erb')
+        template('app/views/shared/_sidebar.html.erb')
       end
 
       def create_pages_views
-        template 'pages.html.erb', 'app/views/layouts/pages.html.erb'
-        template 'index.html.erb', 'app/views/pages/index.html.erb'
-        template 'show.html.erb', 'app/views/pages/show.html.erb'
+        template('app/views/layouts/pages.html.erb')
+        template('app/views/pages/index.html.erb')
+        template('app/views/pages/show.html.erb')
       end
 
       def add_scopes
@@ -120,10 +120,10 @@ module Frame
     end
 
     def update_db
-      if yes?("Would you like to migrate the database?")
+      #if yes?("Would you like to migrate the database?")
         rake("db:migrate")
         rake("db:seed")
-      end
+      #end
     end
 
     private

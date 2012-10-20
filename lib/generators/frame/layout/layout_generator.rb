@@ -12,9 +12,9 @@ module Frame
 
     def remove_index
       filename="public/index.html"
-      if File.exists?(filename) and yes?("Would you like to remove '#{filename}'?")
+      #if File.exists?(filename) and yes?("Would you like to remove '#{filename}'?")
         remove_file filename
-      end
+      #end
     end
 
     def add_default_layout

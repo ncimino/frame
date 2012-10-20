@@ -33,6 +33,7 @@ module Frame
     def create_rake_file
       #@title = Rails.application.class.parent_name.downcase
       template('Rakefile')
+      gsub_file 'Rakefile', /Rails\.application\.class\.parent_name\:\:Application\.load_tasks/, "#{Rails.application.class.parent_name}::Application.load_tasks"
     end
 
     end

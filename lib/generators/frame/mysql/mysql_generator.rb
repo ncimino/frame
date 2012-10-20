@@ -6,7 +6,7 @@ module Frame
     class MysqlGenerator < Base
     include Rails::Generators::Migration
 
-    desc "Update MySQL with user priveleges."
+    desc "Update MySQL with user privileges."
 
     def add_gems
       gem("mysql2")
@@ -48,6 +48,7 @@ module Frame
     end
 
     def create_db
+      rake("db:reset")
       rake("db:setup")
     end
 

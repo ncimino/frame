@@ -8,12 +8,17 @@ module Frame
 
     desc "Installs Omniauth."
 
+    def add_omniauth_secret
+      template('config/initializers/omniauth.rb')
+    end
+    private
     def install_omniauth
 
       gem 'omniauth'
+      gem 'omniauth-github'
+      gem 'omniauth-facebook'
       gem 'omniauth-twitter'
       gem 'omniauth-google-oauth2'
-      gem 'omniauth-github'
 
       Bundler.with_clean_env do
         run "bundle"
@@ -41,7 +46,7 @@ module Frame
     end
 
     # Leave the routes?
-    def generate_authentication_controller
+    def g_authentication_controller
       generate('controller Authentications index create destroy')
       template('app/controllers/authentications_controller.rb')
       remove_file('app/views/authentications/index.html.erb')
@@ -51,7 +56,7 @@ module Frame
       template('app/views/authentications/index.html.erb')
     end
 
-    def generate_registration_controller
+    def g_registration_controller
       generate('controller Registrations edit new')
       template('app/views/registrations/edit.html.erb')
       template('app/views/registrations/new.html.erb')
@@ -75,12 +80,12 @@ module Frame
 
     def copy_images
       template('app/assets/images/facebook_32.png')
-      template('app/assets/images/github_32.png')
-      template('app/assets/images/google_32.png')
-      template('app/assets/images/twitter_32.png')
       template('app/assets/images/facebook_64.png')
+      template('app/assets/images/github_32.png')
       template('app/assets/images/github_64.png')
+      template('app/assets/images/google_32.png')
       template('app/assets/images/google_64.png')
+      template('app/assets/images/twitter_32.png')
       template('app/assets/images/twitter_64.png')
     end
 
@@ -91,9 +96,9 @@ module Frame
     end
 
     def update_db
-      if yes?("Would you like to migrate the database?")
+      #if yes?("Would you like to migrate the database?")
         rake("db:migrate")
-      end
+      #end
     end
 
     end

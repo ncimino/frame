@@ -17,7 +17,7 @@ module Frame
     end
 
     def install_active_admin
-      if yes?("Would you like to install Active Admin?")
+      #if yes?("Would you like to install Active Admin?")
         gem("activeadmin")
         Bundler.with_clean_env do
           run "bundle install"
@@ -25,13 +25,13 @@ module Frame
         generate("active_admin:install")
         default_model = "page"
         generate("active_admin:resource #{default_model}")
-      end
+      #end
     end
 
     def update_db
-      if yes?("Would you like to migrate the database?")
+      #if yes?("Would you like to migrate the database?")
         rake("db:migrate")
-      end
+      #end
     end
 
     def update_admin_form
@@ -51,9 +51,9 @@ module Frame
     def remove_pages_cud
       filenames = ["app/views/pages/new.html.erb", "app/views/pages/edit.html.erb", "app/views/pages/index.html.erb", "app/views/pages/_form.html.erb"]
         filenames.each { |filename|
-          if File.exists?(filename) and yes?("Would you like to remove '#{filename}'?")
+          #if File.exists?(filename) and yes?("Would you like to remove '#{filename}'?")
             remove_file filename
-          end
+          #end
         }
       template('app/views/pages/show.html.erb')
     end
