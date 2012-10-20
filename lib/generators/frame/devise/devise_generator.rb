@@ -63,8 +63,9 @@ module Frame
       application(nil, :env => "test") do
         "config.action_mailer.default_url_options = { :host => 'localhost:3000' }"
       end
-      application(nil, :env => "development") do
-        "config.action_mailer.default_url_options = { :host => 'localhost:3000' }"
+      application(nil, :env => "development") do "
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.assets.debug = false"
       end
     end
 

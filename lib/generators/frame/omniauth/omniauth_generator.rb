@@ -11,7 +11,7 @@ module Frame
     def add_omniauth_secret
       template('config/initializers/omniauth.rb')
     end
-    private
+
     def install_omniauth
 
       gem 'omniauth'
@@ -53,7 +53,7 @@ module Frame
       remove_file('app/views/authentications/create.html.erb')
       remove_file('app/views/authentications/destroy.html.erb')
       # Need this index?
-      template('app/views/authentications/index.html.erb')
+      #template('app/views/authentications/index.html.erb')
     end
 
     def g_registration_controller

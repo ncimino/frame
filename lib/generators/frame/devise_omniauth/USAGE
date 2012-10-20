@@ -1,0 +1,11 @@
+Description:
+    Generates devise omniauthable installation.
+
+Usage:
+    Use to generate install and setup omniauthable devise for a project.
+
+Examples:
+    rails generate frame:devise_omniauth
+
+Methods:
+    There are several methods generated which you can use in your application.

@@ -22,7 +22,7 @@ module Frame
       puts "database: #{db}"
       output = create_file 'tmp/drop_db.sql', "DROP DATABASE IF EXISTS #{db};"
       puts "output: #{output}\nEnter mysql root password"
-      system "mysql -u root -p < #{output}"
+      system "mysql -u root < #{output}"
     end
 
     def add_user
@@ -33,7 +33,7 @@ module Frame
       puts "using pw: #{pw}"
       output = create_file 'tmp/create_user.sql', "CREATE USER '#{user}'@localhost IDENTIFIED BY '#{pw}';"
       puts "output: #{output}\nEnter mysql root password"
-      system "mysql -u root -p < #{output}"
+      system "mysql -u root < #{output}"
     end
 
     def grant_user
@@ -44,7 +44,7 @@ module Frame
       puts "all on db: #{db}"
       output = create_file 'tmp/grant_user.sql', "GRANT ALL PRIVILEGES ON #{db}.* TO '#{user}'@localhost;"
       puts "output: #{output}\nEnter mysql root password"
-      system "mysql -u root -p < #{output}"
+      system "mysql -u root < #{output}"
     end
 
     def create_db
