@@ -11,6 +11,11 @@ module Frame
     # Need to seed the production environment with:
     #AdminUser.create!(:email=>'test@test.com',:username=>'test',:password=>'password')
 
+    def add_admin_seed
+      file='db/seeds.rb'
+      add_if_missing(file, "AdminUser.create!(:email=>'admin@example.com',:password=>'password')")
+    end
+
     def add_gems
       add_gem("sass-rails", :group => "test")
       add_gem("meta_search", :group => "test")
