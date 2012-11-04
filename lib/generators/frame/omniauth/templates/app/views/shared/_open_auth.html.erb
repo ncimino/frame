@@ -8,7 +8,7 @@
           <div class="authentications">
             <%% for authentication in @authentications %>
                 <div class="authentication ui-corner-all left">
-                  <%%= link_to "X", authentication, :confirm => 'Are you sure you want to remove this authentication option?', :method => :delete, :class => "right", :title => "Remove" %>
+                  <%%= link_to "X", :controller => :authentications, :action => :destroy, :id => authentication.id, :confirm => 'Are you sure you want to remove this authentication option?', :class => "right", :title => "Remove" %>
                   <%%= image_tag "#{authentication.provider_name.downcase}_32.png", :size => "32x32" %>
                   <div class="provider"><%%= authentication.provider_name %></div>
                   <!--div class="uid alt"><%%= authentication.uid %></div-->
