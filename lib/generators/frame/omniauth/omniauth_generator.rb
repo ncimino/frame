@@ -8,10 +8,6 @@ module Frame
 
     desc "Installs Omniauth."
 
-    def add_omniauth_secret
-      template('config/initializers/omniauth.rb')
-    end
-
     def install_omniauth
 
       gem 'omniauth'
@@ -23,6 +19,10 @@ module Frame
       Bundler.with_clean_env do
         run "bundle"
       end
+    end
+
+    def add_omniauth_secret
+      template('config/initializers/omniauth.rb')
     end
 
     def direct_devise_to_registrations
